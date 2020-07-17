@@ -2,11 +2,14 @@
 
 const express = require('express')
 const api_helper = require('./API_helper')
+const morgan = require('morgan')
 const port = 3000;
 
 require('dotenv').config();
 
 const app = express()
+app.use(morgan('combined'))
+
 
 app.get('/', (req, res) => {
     res.send('Tiny Weather Endpoint:V1.0.0')
