@@ -14,5 +14,12 @@ The Architecture is fairly simple using Express as our main API and Redis as a m
   - Add a variable "PORT" with the port you wish to run your applicatio on (3000)
   - Add a variable "UNITS" with the type of tempreature measurement you wish to recieve in the api response (metric)
   - run `Docker-compose up -d` to run the application
+### Example Output
+You will end up with the following result. Notice in the URL we mass in the City name and its Country Code. These are the dynamic url paramaters.
+
+<p align="center">
+  <img src="./response.png" width="256" title="Response Screenshot">
+</p>
+
  
 
