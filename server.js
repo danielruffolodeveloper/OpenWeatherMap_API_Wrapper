@@ -12,11 +12,11 @@ app.use(morgan('combined'))
 
 
 app.get('/', (req, res) => {
-    res.send('Tiny Weather Endpoint:V1.0.0')
+    res.send('Tiny Weather API:V1.0.0')
 })
 
 app.get('/getweather/:location', (req, res) => {
-    api_helper.make_API_call(`http://api.openweathermap.org/data/2.5/weather?q=${req.params.location}&appid=${process.env.API_KEY}`)
+    api_helper.make_API_call(`http://api.openweathermap.org/data/2.5/weather?q=${req.params.location}&units=${process.env.UNITS}&appid=${process.env.API_KEY}`)
     .then(response => {
         res.json(response)
     })
