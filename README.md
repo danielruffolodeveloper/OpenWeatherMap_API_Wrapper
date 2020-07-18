@@ -1,4 +1,4 @@
-# WeatherAPI_CI_AWS
+# WeatherAPI_CI
 A small Express.js API endpoint that takes in a URL parameter of City and Country Code (eg. "AU") and fetches data from https://openweathermap.org/api in JSON Format.
 
 ### Purpose
