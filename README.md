@@ -3,7 +3,7 @@ A small Express.js API endpoint that takes in a URL parameter of City and Countr
 ### Purpose
 The purpose of this repository is to explain how easy it is to interface with a 3rd party API using Express
 ### Architecture
-The architecture is fairly simple using Express as our main API and a helper module for making external quests within the API to the external data resource.
+The architecture is fairly simple using Express.js as our main API and a helper module for making external requests within the API to the external data resource.
 ### Run
  #### Using Docker
   - create a .env file in the root of the project
