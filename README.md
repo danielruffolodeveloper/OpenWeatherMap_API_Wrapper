@@ -1,12 +1,9 @@
 # OpenWeatherMap_API_Wrapper
 A small Express.js API endpoint that takes in a URL parameter of City and Country Code (eg. "AU") and fetches data from https://openweathermap.org/api in JSON Format.
-
 ### Purpose
 The purpose of this repository is to explain how easy it is to interface with a 3rd party API using Express
-
 ### Architecture
-The architecture is fairly simple using Express as our main API and Redis as a means of collecting usage metrics. We colelct the metrics to determine how often the endpoint is being accessed and what is the most common weather location requested.
-
+The architecture is fairly simple using Express as our main API and a helper module for making external quests within the API to the external data resource.
 ### Run
  #### Using Docker
   - create a .env file in the root of the project
